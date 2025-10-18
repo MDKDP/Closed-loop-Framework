@@ -18,7 +18,7 @@ code/
 │   └── kg_refine_and_kg_expand.py   # Unified interface for KG operations (pretrain, expansion, refinement)
 │
 ├── RGHAT/
-│   ├── RGHAT.py                 # RGHAT architecture or KG embedding network
+│   ├── RGHAT.py                 # RGHAT architecture
 │   ├── batch_test.py            # Batch testing utilities
 │   ├── load_data_rghat.py       # Data loading functions
 │   ├── loader_rghat.py          # Data loading functions
