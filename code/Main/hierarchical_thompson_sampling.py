@@ -73,7 +73,7 @@ def compute_entity_reward(entity_embed, cooccur_count, max_cooccur, ontology_emb
 
 
 def ner_for_graph_update(data_generator, NER_results, train_time, epoch, device):
-    # ---------- 1. 数据提取（与原代码完全一致）----------
+    # ---------- 1. 数据提取----------
     pos_data, neg_data = [], []
     pos_sentence_id, neg_sentence_id = [], []
     pos_token_id, neg_token_id = [], []
@@ -326,7 +326,7 @@ def ner_for_graph_update(data_generator, NER_results, train_time, epoch, device)
         pickle.dump(ts_state, f)
 
     # ---------- 5. 生成正例三元组（仅使用选中实体）----------
-    # 构建动态关系映射（与原代码一致）
+    # 构建动态关系映射
     relation_category = {}
     rid = 0
     for i, t1 in enumerate(all_types):
@@ -372,7 +372,7 @@ def ner_for_graph_update(data_generator, NER_results, train_time, epoch, device)
             if linked:
                 break
 
-    # ---------- 6. 负例三元组（完全复用旧代码）----------
+    # ---------- 6. 负例三元组----------
     Neg_e = []
     depression_embed = pretrain_embeddings[voc_id_bert['depression']]
     virus_embed = pretrain_embeddings[voc_id_bert['virus']]
