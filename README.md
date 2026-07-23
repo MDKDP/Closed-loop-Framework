@@ -12,10 +12,11 @@ code/
 ├── MCTS/
 │   ├── construct_graph.py       # Knowledge graph construction
 │   ├── monte_search.py          # Monte Carlo search algorithm
-│   └── __init__.py
+│   └── **init**.py
 │
 ├── Main/
-│   └── kg_refine_and_kg_expand.py   # Unified interface for KG operations (pretrain, expansion, refinement)
+│   ├── kg_refine_and_kg_expand.py   # Unified interface for KG operations (pretrain, expansion, refinement)
+│   └── hierarchical_thompson_sampling.py # Hierarchical Thompson sampling
 │
 ├── RGHAT/
 │   ├── RGHAT.py                 # RGHAT architecture
@@ -24,7 +25,7 @@ code/
 │   ├── loader_rghat.py          # Data loading functions
 │   ├── parser_rghat.py          # Parameters
 │   ├── rghat_main.py            # RGHAT training script
-│   └── __init__.py
+│   └── **init**.py
 │
 ├── LICENSE
 └── README.md
